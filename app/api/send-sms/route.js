@@ -1,6 +1,3 @@
-import AWS from 'aws-sdk';
-import dotenv from 'dotenv';
-import sendSms from '@/config/sms'
 import { NextResponse } from 'next/server';
 import {pool} from '@/config/db'
 

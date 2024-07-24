@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Settings(props) {
+function Settings() {
     return (
         <div className='flex-col  items-start justify-start mt-10 border rounded p-5 w-3/4 mx-auto h-[30rem]'>
             <div className='flex flex-col items-start justify-start p-10 border mx-auto my-auto w-full h-auto bg-app-primary'>

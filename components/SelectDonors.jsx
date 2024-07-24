@@ -1,11 +1,10 @@
 'use client'
 import React, {useState} from 'react'
 import {people} from '@/constants';
-import {useMessageContext} from '@/components/MessageContext'
 import {useSmsContext} from '@/components/SmsContext'
 import {useRouter} from 'next/navigation'
 
-function SelectDonors(props) {
+function SelectDonors() {
 
     const [selectedContacts, setSelectedContacts] = useState([])
     const router = useRouter()
@@ -22,21 +21,7 @@ function SelectDonors(props) {
         }
     }
 
-    const handleCheckboxChange2 = (phoneNumber) => {
-        selectedContacts.includes(phoneNumber) ? setSelectedContacts(selectedContacts.filter((id)=> id !== phoneNumber))
-            : setSelectedContacts([...selectedContacts, phoneNumber])
-    }
 
-
-    /*const { selectedContacts, updateSelectedContacts } = useMessageContext();
-
-    const handleCheckboxChange = (phoneNumber) => {
-        const newSelectedContacts = selectedContacts.includes(phoneNumber)
-            ? selectedContacts.filter((id) => id !== phoneNumber)
-            : [...selectedContacts, phoneNumber];
-
-        updateSelectedContacts(newSelectedContacts);
-    };*/
 
     const {selectedContactsSms, updateSelectedContactsSms} = useSmsContext()
 
@@ -47,16 +32,6 @@ function SelectDonors(props) {
 
     }
 
-    /*const handleCheckboxChange = (phoneNumber) => {
-        // Check if the contact is already selected
-        if (selectedContacts.includes(phoneNumber)) {
-            // If it is selected, remove it from the array
-            setSelectedContacts(selectedContacts.filter((id) => id !== phoneNumber))
-        } else {
-            // If it is not selected, add it to the array
-            setSelectedContacts(selectedContacts => [...selectedContacts, phoneNumber])
-        }
-    }*/
 
     return (
         <>

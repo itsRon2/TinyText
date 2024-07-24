@@ -1,10 +1,10 @@
 'use client'
-import React, {useState} from 'react'
+import React from 'react'
 
-import {CustomButton, SignOutButton} from '@/components/index'
+import { SignOutButton} from '@/components/index'
 
 
-function Header(props) {
+function Header() {
 
     return (
         <>

@@ -3,7 +3,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation'
 
-function QuickAccess(props) {
+function QuickAccess() {
     const router = useRouter()
 
     return (

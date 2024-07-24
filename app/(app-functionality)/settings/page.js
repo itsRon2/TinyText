@@ -1,7 +1,7 @@
 import React from 'react'
 import {Settings} from '@/components'
 
-function Page(props) {
+function Page() {
     return (
         <><Settings/></>
     )

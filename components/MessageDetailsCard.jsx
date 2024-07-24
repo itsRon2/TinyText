@@ -1,11 +1,11 @@
 'use client'
-import React, {useEffect, useState} from 'react'
+import React, { useState} from 'react'
 import Image from 'next/image'
 import {formatMessageDetails} from '@/config/messagesHandler'
 
 
 function MessageDetailsCard({message}) {
-    const [isSelected, setSelected] = useState(false)
+
 
     const { formattedRecipients, extraRecipients, title, summary } = formatMessageDetails(message);
 

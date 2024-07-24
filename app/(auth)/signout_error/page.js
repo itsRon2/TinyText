@@ -1,7 +1,7 @@
 import React from 'react'
 import {SignOutErrorPage} from '@/components'
 
-function Page(props) {
+function Page() {
     return (
         <><SignOutErrorPage/></>
     )

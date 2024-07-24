@@ -1,5 +1,3 @@
-
-import { NextResponse } from "next/server";
 import util from "util";
 import {checkDbConnection, pool} from '@/config/db'
 import NextAuth from 'next-auth';
